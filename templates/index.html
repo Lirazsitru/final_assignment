@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listing Price Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+ <style>
+      label {
+        display: block;
+      }
+      body {
+        font-family: 'Heebo Light', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+
+</head>
+<body>
+    <h1>Listing Price Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="City"><br><br>
+
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type"><br><br>
+
+        <label for="room_number">Room Number:</label>
+        <input type="number" step="any" id="room_number" name="room_number"><br><br>
+
+        <label for="area">Area:</label>
+        <input type="number" step="any" id="area" name="Area"><br><br>
+
+        <label for="hasElevator">Has Elevator:</label>
+        <select id="hasElevator" name="hasElevator ">
+            <option value="1">yes</option>
+            <option value="0">no</option>
+        </select><br><br>
+
+        <label for="hasParking">Has Parking:</label>
+        <select id="hasParking" name="hasParking ">
+            <option value="1">yes</option>
+            <option value="0">no</option>
+        </select><br><br>
+
+
+        <label for="hasStorage">Has Storage:</label>
+        <select id="hasStorage" name="hasStorage ">
+            <option value="1">yes</option>
+            <option value="0">no</option>
+        </select><br><br>
+
+        <label for="condition">Condition:</label>
+        <input type="text" id="condition" name="condition "><br><br>
+
+        <label for="hasAirCondition">Has Air Condition:</label>
+        <select id="hasAirCondition" name="hasAirCondition ">
+            <option value="1">yes</option>
+            <option value="0">no</option>
+        </select><br><br>
+
+        <label for="hasBalcony">Has Balcony:</label>
+        <select id="hasBalcony" name="hasBalcony ">
+            <option value="1">yes</option>
+            <option value="0">no</option>
+        </select><br><br>
+
+        <label for="hasMamad">Has Mamad:</label>
+        <select id="hasMamad" name="hasMamad ">
+            <option value="1">yes</option>
+            <option value="0">no</option>
+        </select><br><br>
+
+        <label for="handicapFriendly">Handicap Friendly:</label>
+        <select id="handicapFriendly" name="handicapFriendly ">
+            <option value="1">yes</option>
+            <option value="0">no</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
